@@ -18,7 +18,7 @@ app.get('/', function (request, response) {
 
 app.post('/', bodyParser, (req, res, next) => {
     console.log(req.body)
-    res.end();
+    res.send(req.body);
 })
 
 var port = process.env.PORT || 5000;
